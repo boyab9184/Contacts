@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  contacts:
+    image: ${DOCKER_REGISTRY-}contacts
+    build:
+      context: .
+      dockerfile: Contacts/Dockerfile
